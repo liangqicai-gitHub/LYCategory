@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LYCategory'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LYCategory.'
+  s.summary          = '常用的语法糖'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,32 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    对string、mutaleString的常规处理。
+    对date的常规处理。
+    对xib的常规处理。
+    对collectionview，tableview的注册cell、dequeCell做简化。
+    对分割线做简化处理。
+    对codeable的简化处理。
                        DESC
 
-  s.homepage         = 'https://github.com/Sunny/LYCategory'
+  s.homepage         = 'https://github.com/liangqicai-gitHub/LYCategory'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sunny' => '2468751795@qq.com' }
-  s.source           = { :git => 'https://github.com/Sunny/LYCategory.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/liangqicai-gitHub/LYCategory.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'LYCategory/Classes/**/*'
-  
+  s.swift_versions = [5.0]
+
   # s.resource_bundles = {
   #   'LYCategory' => ['LYCategory/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'YYCategories', '~> 1.0.4'
+
 end
