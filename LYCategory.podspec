@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'LYCategory'
+  s.name             = 'LiangYCategory'
   s.version          = '0.1.0'
   s.summary          = '常用的语法糖'
 
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'YYCategories', '~> 1.0.4'
+  s.dependency 'YYCategories', '1.0.4'
   s.dependency 'RxSwift', '6.5.0'
   s.dependency 'RxCocoa', '6.5.0'
   s.dependency 'SnapKit', '5.6.0'
